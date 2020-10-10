@@ -1,7 +1,7 @@
 # MONET
 
-##Run
+## Run
 java -jar MONET.jar config_file.xml
 
-##Java Version
+## Java Version
 12
