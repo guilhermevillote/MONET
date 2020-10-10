@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIGURATION>
+
+    <MODULE>
+        <MRAR>ON</MRAR>
+        <MRARE>OFF</MRARE>
+        <LOD>OFF</LOD>
+    </MODULE>
+
+    <RULE>
+        <SUPPORT>0.08</SUPPORT>
+        <CONFIDENCE>0.7</CONFIDENCE>
+        <LEVEL>
+            <MIN>1</MIN>
+            <MAX>3</MAX>
+        </LEVEL>
+    </RULE>
+
+    <INPUT>
+        <SOURCE>
+            <FILE>C:/PFC/data/Dt_Futebol.nt</FILE>
+        </SOURCE>
+        <TARGET>
+            <PREVIEW>OFF</PREVIEW>
+            <ENDPOINT>http://dbpedia.org/sparql</ENDPOINT>
+            <PREFIX>
+                <LABEL>dbo</LABEL>
+                <NAMESPACE>http://dbpedia.org/ontology/</NAMESPACE>
+            </PREFIX>
+            <PROPERTY>dbo:team</PROPERTY>
+        </TARGET>
+    </INPUT>
+
+    <OUTPUT>
+        <MRAR>
+            <NAME>futebol_mrar_rules</NAME>
+            <PATH>C:/PFC/rules</PATH>
+        </MRAR>
+        <MRARE>
+            <NAME>---</NAME>
+            <PATH>C:/PFC/rules</PATH>
+        </MRARE>
+    </OUTPUT>
+
+</CONFIGURATION>
+
